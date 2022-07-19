@@ -1,0 +1,215 @@
+@font-face {
+  font-family: "Segoe UI";
+  src: url("./fonts/SEGOEUI.TTF");
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@400;500&family=Work+Sans&display=swap");
+
+:root {
+  --primary: #3aa395;
+  --text-primary: #1c7065;
+  --text-white: #ffffff;
+  --primary-dark: #0d3c35;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Inknut Antiqua", serif;
+}
+.color-primary {
+  color: var(--text-primary) !important;
+}
+.color-white {
+  color: var(--text-white);
+}
+.color-primary-dark {
+  color: var(--primary-dark);
+}
+.backg-primary {
+  background-color: var(--primary);
+}
+.button {
+  background: var(--primary);
+  border: 0.5px solid var(--primary);
+  border-radius: 10px;
+  padding: 14px 24px;
+}
+.main-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 73px;
+}
+.main-sub-title {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 150%;
+}
+.section-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 83px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+.section-para {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.card-para {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+.list-text {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+.sub-heading {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+.button-text {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 142.5%;
+}
+.navbar-pad {
+  padding: 32px 75px;
+}
+.navbar-margin {
+  margin: auto 270px;
+}
+.nav-link {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.015em;
+}
+.title-section {
+  padding: 75px 125px;
+  background-image: url("../assets/Landing\ section\ background.png");
+  min-height: 620px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.who-we-section {
+  padding: 75px 155px;
+}
+.who-we-section-para {
+  padding: 0px 155px;
+}
+.photo-box {
+  margin-top: 60px;
+  width: 96px;
+  height: 89px;
+  background: #ffffff;
+  box-shadow: 0px 2.76259px 2.76259px rgba(0, 0, 0, 0.25);
+  border-radius: 25px;
+}
+.padx-300 {
+  padding-left: 300px;
+  padding-right: 300px;
+}
+.circle-gradient {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(178.36deg, #399a8d 17.74%, #ffffff 147.34%);
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  position: relative;
+  bottom: -4%;
+}
+.team-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 4px 10px rgba(52, 111, 98, 0.25);
+  border-radius: 20px;
+  width: 242px;
+  height: 203.97px;
+}
+.team-box-no {
+  font-family: "Inknut Antiqua";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 97.5%;
+}
+.line1 {
+  width: 200px;
+  position: absolute;
+  right: 55%;
+  top: -18%;
+}
+.line2 {
+  position: absolute;
+  right: 57%;
+  top: 7%;
+}
+.line3 {
+  width: 300px;
+  position: absolute;
+  right: 60%;
+  top: 3%;
+}
+.line4 {
+  position: absolute;
+  width: 200px;
+  top: -3%;
+}
+.line5 {
+  position: absolute;
+  right: 57%;
+  bottom: 65%;
+}
+.why-section {
+  padding: 55px 120px 0 0;
+}
+.what-we-do-section{
+  padding: 60px 70px;
+}
+.do-section {
+  align-items: baseline;
+  flex-direction: row;
+}
+.do-box {
+  display: flex;
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 106px;
+  border-radius: 15px;
+  overflow: hidden;
+}
