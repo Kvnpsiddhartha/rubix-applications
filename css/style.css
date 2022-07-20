@@ -27,7 +27,13 @@
   color: var(--primary-dark);
 }
 .backg-primary {
-  background-color: var(--primary);
+  background-color: var(--primary) !important;
+}
+.backg-white {
+  background-color: #ffffff;
+}
+.backg-primary-dark {
+  background-color: var(--text-primary) !important;
 }
 .button {
   background: var(--primary);
@@ -111,10 +117,16 @@
 .title-section {
   padding: 75px 125px;
   background-image: url("../assets/Landing\ section\ background.png");
-  min-height: 620px;
+  height: 100vh;
+  /* min-height: 620px; */
   background-position: center;
   background-repeat: no-repeat;
+  background-size: contain;
+  /* -webkit-background-size: cover;
+  -moz-background-size: cover;
   background-size: cover;
+  -o-background-size: cover; */
+  /* height: 100%; */
 }
 .who-we-section {
   padding: 75px 155px;
@@ -192,7 +204,7 @@
 .why-section {
   padding: 55px 120px 0 0;
 }
-.what-we-do-section{
+.what-we-do-section {
   padding: 60px 70px;
 }
 .do-section {
@@ -200,16 +212,212 @@
   flex-direction: row;
 }
 .do-box {
-  display: flex;
   font-family: "Segoe UI";
   font-style: normal;
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
   width: 180px;
   height: 106px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   border-radius: 15px;
   overflow: hidden;
+}
+.track-box {
+  width: 180px;
+  height: 180px;
+  border-radius: 20px;
+  padding: 38px 0;
+}
+.track-section {
+  padding: 56px 88px 0 88px;
+}
+.track-box-title {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 53px;
+  margin-bottom: 10px;
+}
+.track-box-para {
+  font-family: "Segoe UI";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.015em;
+}
+.dots1 {
+  position: absolute;
+  bottom: 30px;
+  left: 80px;
+}
+.dots2 {
+  position: absolute;
+  top: 30px;
+  right: 80px;
+}
+.deals-section .sub-heading.active {
+  color: #0d3c35;
+}
+.deals-section .sub-heading {
+  color: #bacecc;
+}
+
+.nav-link::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 5px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  transform-origin: right top !important;
+  transform: scale(0, 1);
+  transition: color 0.1s, transform 0.2s ease-out;
+  background-color: #ffffff;
+}
+.nav-link.active::after {
+  background-color: #0d3c35;
+}
+.nav-link:hover::after,
+.nav-link:focus::after,
+.nav-link.active::after {
+  transform-origin: left top;
+  transform: scale(1, 1);
+  background-color: #0d3c35;
+}
+.hr {
+  /* border: .5px solid #656b6b; */
+  margin: -11px 90px 30px 90px;
+  background-color: #656b6b;
+}
+.border-image {
+  width: fit-content;
+  border: 5px solid #3aa395;
+  border-radius: 15px;
+}
+.deals-section-table {
+  border-color: #ffffff !important;
+}
+.border-table {
+  overflow: auto;
+
+  border-radius: 20px;
+  margin: 0 70px;
+}
+.border-table table {
+  width: 536px;
+  height: 425px;
+  background: #3aa395;
+  margin-bottom: 0;
+}
+.carousel-indicators {
+  top: 300px;
+}
+.carousel-indicators li {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  /* RELIABLE/1 */
+  border-radius: 100%;
+  border: 0.436404px solid #1c7065;
+}
+.carousel-indicators li.active {
+  background-color: #0d3c35;
+}
+.roadmap-section {
+  padding: 60px 120px;
+}
+.proposal-section {
+  padding: 75px 140px;
+}
+.sketch-image {
+  width: fit-content;
+  border: 10px solid #ffffff;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.sketch-section {
+  padding: 60px 0;
+}
+.clients-section {
+  padding: 64px 80px;
+}
+.circle {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding-top: 20px;
+}
+.circle img {
+  width: 110px;
+  height: 112px;
+}
+.say-section {
+  padding: 66px 230px;
+  height: 672px;
+}
+.contact-section {
+  padding: 60px 110px;
+}
+.form {
+  padding: 30px 60px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  width: 492px;
+}
+.form-label {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+}
+.form-input,
+.form-select {
+  border: 1.5px solid #3aa395;
+  border-radius: 6px;
+  padding: 14px 24px;
+}
+.form-input::placeholder {
+  color: #d7cfde;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+}
+.footer {
+  padding: 64px 127px;
+}
+.border-map {
+  width: fit-content;
+  border: 4px solid #ffffff;
+  border-radius: 10px;
+  width: 321px;
+  height: 321px;
+}
+@media only screen and (max-width: 768px) {
+  .title-section,.do-section,.why-section,.say-section,.deals-section,.track-section,.who-we-section,.sketch-section,.clients-section,.contact-section,.padx-300,.who-we-section-para,.proposal-section,.roadmap-section{
+    padding: 30px!important;
+  }
+  .main-title,.main-sub-title,.section-title,.main-sub-title,.list-text,.card-para,.section-para{
+    font-size: 1.2rem;
+  }
+  .track-box-title,.track-box-para{
+    font-size: 1rem;
+    line-height: 1;
+  }
+  .track-box{
+    width: 100px;
+    height: 100px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin: 0 auto!important;
+
+  }
 }
